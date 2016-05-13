@@ -333,7 +333,7 @@ as a <code>/signup</code> endpoint.</p>
 </code></pre>
 
 <p>After the signup view creation, we can issue <code>GET</code> requests to read data
-from users and companies, but any atempt to <code>POST</code> or <code>PATCH</code> data will fail.
+from users and companies, but any attempt to <code>POST</code> or <code>PATCH</code> data will fail.
 PostgreSQL won't allow any data change on views that have a <code>JOIN</code> 
 clause in their <code>FROM</code> without a proper <code>INSTEAD OF</code> trigger.
 So in the example bellow we create a trigger to allow insertion of data in the signup view.
